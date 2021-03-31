@@ -1,0 +1,10 @@
+<ol class="foundItemsList" style="margin-top: 100px">
+    <li ng-repeat="item in menu.foundItems">
+        <div>Name: {{ item.name}} </div>
+        <div>Description: {{ item.description }}</div>
+        <div>Price Large: {{ item.price_large }}</div>
+        <div>Price Small: {{ item.price_small }}</div>
+        
+        <button ng-click="menu.onRemove({index: $index});">Remove Item</button>
+    </li>
+</ol>
